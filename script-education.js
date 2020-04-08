@@ -102,7 +102,7 @@ function make_pie(cat, data) {
         .data(data_ready)
         .enter()
         .append('text')
-        .attr('font-size', '0.9em')
+        .attr('font-size', '1em')
         .style('fill', 'grey')
         .text(function (d) {
             return d.data.key + " (" + d.data.value + ")"
