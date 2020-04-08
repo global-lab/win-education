@@ -25,7 +25,7 @@ function make_pie(cat, data) {
     let width = window.innerWidth
     let height = window.innerHeight;
     // let height = width;
-    let radius = (Math.min(width, height) / 3.5) - margin;
+    let radius = (Math.min(width, height) / 3) - margin;
     let sum = Object.values(data).reduce((a, b) => a + b, 0); //total number of iqps in this category
 
     let svg = d3.select("#viz")
